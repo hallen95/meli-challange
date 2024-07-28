@@ -1,0 +1,11 @@
+@use "../../styles/variables" as *;
+
+.error-container {
+  margin: $spacing-lg 0;
+  padding: $spacing-lg 0;
+  color: #d8000c;
+  border: 1px solid #d8000c;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

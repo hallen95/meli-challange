@@ -1,0 +1,71 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.product-detail {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  background-color: $color-white;
+  padding: $spacing-lg;
+  margin-bottom: $spacing-lg;
+}
+
+.product-detail {
+  &__card {
+    display: flex;
+    margin-top: $spacing-lg;
+    margin-bottom: $spacing-lg;
+  }
+
+  &__image {
+    width: $card-width-lg;
+    height: $card-height-lg;
+    margin: $margin-small;
+    object-fit: cover;
+    align-self: flex-start;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  &__condition {
+    color: $color-gray-darker;
+    font-weight: 400;
+    font-size: $font-size-sm;
+    margin: 0 0 $spacing-md 0;
+  }
+
+  &__title {
+    font-size: $font-size-md;
+    font-weight: $font-weight-bold;
+    margin: 0 0 $spacing-lg 0;
+  }
+
+  &__price {
+    font-size: $font-size-lg;
+    font-weight: $font-weight-bold;
+    margin-bottom: $spacing-lg;
+    margin: 0 0 $spacing-lg 0;
+  }
+
+  &__button {
+    @include button($color-blue, $color-white);
+  }
+
+  //
+  &__description {
+    width: $card-width-lg;
+
+    h2 {
+      margin: 0 0 $spacing-lg 0;
+      font-size: $font-size-lg;
+      font-weight: $font-weight-normal;
+    }
+    p {
+      margin: 0;
+      font-size: $font-size-base;
+    }
+  }
+}

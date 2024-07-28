@@ -1,0 +1,11 @@
+@use "../../styles/variables" as *;
+
+.no-data-container {
+  padding: 20px;
+  text-align: center;
+  background-color: $color-blue;
+  color: #666; // Grey text
+  border-radius: 5px;
+  margin: 20px;
+  font-size: 18px;
+}
