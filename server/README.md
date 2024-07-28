@@ -8,7 +8,6 @@ This project provides an API interface for fetching item data from the MercadoLi
 
 - Node.js
 - npm or yarn installed
-- Access to MercadoLibre API (API keys if required)
 
 ## Installation
 
