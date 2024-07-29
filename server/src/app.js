@@ -5,6 +5,13 @@ import itemsRoutes from "./routes/itemsRoutes.js";
 const app = express();
 app.use(express.json());
 
+//cors setup
+app.use(
+  cors({
+    origin: process.env.API_CORS_ACCESS_ALLOW,
+  })
+);
+
 // Routes
 app.use("/api/items", itemsRoutes);
 
@@ -16,12 +23,5 @@ app.use((err, req, res, next) => {
     },
   });
 });
-
-//cors setup
-app.use(
-  cors({
-    origin: process.env.API_CORS_ACCESS_ALLOW,
-  })
-);
 
 export default app;
